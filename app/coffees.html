@@ -1,0 +1,22 @@
+<div class="btn">
+	<a href="index.html">Back To Home</a>
+</div>
+<div class="coffeelist">
+	<table>
+		<tr>
+			<th>Reviews</th>
+			<th>Brand</th>
+			<th>Coffee Title</th>
+			<th>Country</th>
+		</tr>
+		<tr ng-repeat="coffee in coffees | filter: query | orderBy:orderProp">
+			<td><a href="#/coffees/{{coffee.id}}">?</a></td>
+			<td>{{coffee.brand}}</td>
+			<td>{{coffee.name}}</td>
+			<td>{{coffee.country}}</td>
+		</tr>
+	</table>
+</div>
+<div class="search">
+	Search:&nbsp;&nbsp;&nbsp;&nbsp;<input ng-model="query" />
+</div>

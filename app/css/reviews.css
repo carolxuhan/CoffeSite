@@ -1,0 +1,63 @@
+div.whole a{
+	/*float: right;*/
+	display: inline-block;
+	padding: 10px;
+	/*background-color: white;*/
+}
+div.whole a:link, div.whole a:visited{
+	color: gray;
+}
+div.whole a:hover, div.whole a:active{
+	font-style: italic;
+}
+div.title{
+	font-family: "American Typewriter";
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bolder;
+	/*background-color: white;*/
+}
+
+div.show{
+	/*position: fixed;*/
+	/*bottom: 0;*/
+	/*background-color: #F5F5F5;*/
+	margin-top: 54px;
+	text-align: center;
+}
+img.imshow{
+	width: 50%;
+	display: inline-block;
+	box-shadow: 5px 10px 10px 10px #C0C0C0;
+	/*height: 20%;*/
+}
+
+div.reviewlist{
+	margin-top: 50px;
+	margin-left: 10%;
+}
+div.reviewlist table{
+	width: 80%;
+	/*padding: 10px;*/
+}
+
+div.reviewlist table td{
+	padding-left: 10px;
+	border-bottom: solid 1px black;
+	color: black;
+	height: 30px;
+	font-size: 15px;
+	background-color: white;
+}
+/*div.reviewlist table tr:nth-child(odd){
+	background-color: #C0C0C0;
+	color: white;
+}*/
+div.reviewlist table th{
+	padding-left: 10px;
+	text-align: left;
+	color: white;
+	height: 40px;
+	background-color: black;
+}

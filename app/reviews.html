@@ -1,0 +1,21 @@
+<div class="whole">
+	<a href="index.html">Back To Home</a>
+	<div class="title">Reviews for {{coffeeInfo.brand}}</div>
+	<div class="reviewlist">
+		<table>
+			<tr>
+				<th>Reviewer</th>
+				<th>Comment</th>
+				<th>Rating</th>
+			</tr>
+			<tr ng-repeat="review in coffeeInfo.reviews">
+				<td>{{review.reviewer}}</td>
+				<td>{{review.comment}}</td>
+				<td>{{review.rating}}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="show">
+		<img class="imshow" ng-src="{{coffeeInfo.imageUrl}}">
+	</div>
+</div>
